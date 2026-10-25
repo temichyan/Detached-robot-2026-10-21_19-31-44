@@ -10,6 +10,9 @@ public class LimbSystem : MonoBehaviour
     [SerializeField] private LimbSlot[] LimbSlots;
     System.Action[] LimbMethods;
     private LimbSlot chosedSlot;
+    [SerializeField] private int interactDistance;
+    [SerializeField] private Camera playerCamera;
+    private Limb aimedLimb;
 
     private void Awake()
     {
@@ -26,7 +29,7 @@ public class LimbSystem : MonoBehaviour
     {
         for (int i = 0;i < slotActions.Length;i++)
         {
-            if (slotActions[i].WasPressedThisFrame() && LimbSlots[i].GetComponentInChildren<Limb>())
+            if (slotActions[i].WasPressedThisFrame())
             {
                 chosedSlot = LimbSlots[i];
                 Debug.Log(LimbSlots[i].name);
@@ -62,17 +65,41 @@ public class LimbSystem : MonoBehaviour
     }
     private void DropLimb()
     {
-        chosedSlot.GetComponentInChildren<Limb>().AddComponent<Rigidbody>();
-        chosedSlot.GetComponentInChildren<Limb>().transform.SetParent(null);
+        if (chosedSlot)
+        {
+            chosedSlot.GetComponentInChildren<Limb>().AddComponent<Rigidbody>();
+            chosedSlot.GetComponentInChildren<Limb>().transform.SetParent(null);
+            chosedSlot = null;
+        }
     }
     private void Interact()
     {
-        Debug.Log("Конечность одета");
+        RaycastHit hit;
 
+        if (Physics.Raycast(
+            playerCamera.transform.position,
+            playerCamera.transform.forward,
+            out hit,
+            interactDistance))
+        {
+            Limb limb = hit.collider.GetComponentInChildren<Limb>();
+
+            if (limb && chosedSlot)
+            {
+                Destroy(limb.GetComponent<Rigidbody>());
+                limb.transform.SetParent(chosedSlot.transform);
+                limb.transform.localPosition = new Vector3(0, 0, 0);
+                limb.transform.localRotation = Quaternion.Euler(0,0,0);
+                chosedSlot = null;
+            }
+        }
     }
     private void Ability()
     {
-        Debug.Log("Конечность использована");
-
+        if (chosedSlot.GetComponentInChildren<Limb>())
+        {
+            chosedSlot.GetComponentInChildren<Limb>().UseAbility();
+        }
+        chosedSlot = null;
     }
 }
