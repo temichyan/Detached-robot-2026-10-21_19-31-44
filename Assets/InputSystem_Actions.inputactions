@@ -67,16 +67,6 @@
                     "priority": 0
                 },
                 {
-                    "name": "Sprint",
-                    "type": "Button",
-                    "id": "641cd816-40e6-41b4-8c3d-04687c349290",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false,
-                    "priority": 0
-                },
-                {
                     "name": "DropLimb",
                     "type": "Button",
                     "id": "fc28df70-66f7-4561-bf70-b912318f823d",
@@ -127,6 +117,56 @@
                     "priority": 0
                 },
                 {
+                    "name": "Slot5",
+                    "type": "Button",
+                    "id": "1ad52074-cbdb-4b7d-ac79-bb87a5fc7b40",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "Slot6",
+                    "type": "Button",
+                    "id": "221046b9-cbc1-43e1-b086-c5e9afa50df8",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "Slot7",
+                    "type": "Button",
+                    "id": "27ac02ed-cee6-429b-9bd5-b02a2762a4b4",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "Slot8",
+                    "type": "Button",
+                    "id": "3ebf3a66-fe8f-4742-a9b8-5c3c965ca021",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "Slot9",
+                    "type": "Button",
+                    "id": "bf421e58-e37c-485f-8a9a-095db4c434d8",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
                     "name": "0 DropLimb",
                     "type": "Button",
                     "id": "889047f0-3914-457e-92ef-77723b6a77f2",
@@ -150,6 +190,46 @@
                     "name": "2 Ability",
                     "type": "Button",
                     "id": "75cc5b52-a5e1-423e-bf5d-6a718e0e57ab",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "3 TakeCore",
+                    "type": "Button",
+                    "id": "ab0ec2f2-1ee7-4960-89d9-f7d2dfe8ea79",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "4 PullCore",
+                    "type": "Button",
+                    "id": "ac476a15-55d8-4a56-8f62-85319a3f0f9a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "5 DetachCore",
+                    "type": "Button",
+                    "id": "d6a06740-996f-40ff-805b-9caef4c3818c",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "6 CoreConnect",
+                    "type": "Button",
+                    "id": "b58c816a-35d1-4cbb-a09a-da5736cf07f1",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -391,39 +471,6 @@
                 },
                 {
                     "name": "",
-                    "id": "f2e9ba44-c423-42a7-ad56-f20975884794",
-                    "path": "<Keyboard>/leftShift",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "Sprint",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "8cbb2f4b-a784-49cc-8d5e-c010b8c7f4e6",
-                    "path": "<Gamepad>/leftStickPress",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
-                    "action": "Sprint",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "d8bf24bf-3f2f-4160-a97c-38ec1eb520ba",
-                    "path": "<XRController>/trigger",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "XR",
-                    "action": "Sprint",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "eb40bb66-4559-4dfa-9a2f-820438abb426",
                     "path": "<Keyboard>/space",
                     "interactions": "",
@@ -584,6 +631,105 @@
                     "processors": "",
                     "groups": "",
                     "action": "2 Ability",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9eab72f6-3fda-40ab-9974-094cc016d569",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "3 TakeCore",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "066200a3-dbe0-408a-8000-4619ec96a608",
+                    "path": "<Keyboard>/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "4 PullCore",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c9ff50f7-1a77-47d5-9309-bf86db68d796",
+                    "path": "<Keyboard>/5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Slot5",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "71133057-7eab-4287-a6ae-08e42d941558",
+                    "path": "<Keyboard>/6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Slot6",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9d31bc2d-a423-4378-b2bd-d43c1bfb2366",
+                    "path": "<Keyboard>/7",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Slot7",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fd900728-5c2a-45a8-93ce-acdd1551ff1d",
+                    "path": "<Keyboard>/8",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Slot8",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "879a9c9a-959c-425e-9071-d14065c8c1a5",
+                    "path": "<Keyboard>/9",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Slot9",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4eb6055c-e5ea-497e-8243-44070543c5a3",
+                    "path": "<Keyboard>/c",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "5 DetachCore",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a4a19822-add2-4503-88d4-6e9ad37f6aff",
+                    "path": "<Keyboard>/v",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "6 CoreConnect",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

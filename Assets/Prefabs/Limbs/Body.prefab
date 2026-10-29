@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 3787164149272859660}
   - component: {fileID: 6478679749854005610}
   - component: {fileID: 7958645900344771377}
+  - component: {fileID: 8294675145614281806}
+  - component: {fileID: 7684887424294587818}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -112,3 +114,28 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8294675145614281806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8416675324641745557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8344263528c6ad644878dd22c98a3bbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Body
+--- !u!114 &7684887424294587818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8416675324641745557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c70997942db3e514d850bc24625f85d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CoreSlot
+  core: {fileID: 0}

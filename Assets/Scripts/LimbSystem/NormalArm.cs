@@ -22,6 +22,7 @@ public class NormalArm : Limb
                 aimedThing.transform.localPosition = Vector3.zero;
                 aimedThing.transform.localRotation = Quaternion.Euler(0,0,0);
                 Destroy(aimedThing.GetComponent<Rigidbody>());
+
             } else if (Pocket.GetComponentInChildren<Interactible>())
             {
                 Interactible collectedThing = Pocket.GetComponentInChildren<Interactible>();
