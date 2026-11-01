@@ -18,7 +18,11 @@ public class LimbSystem : MonoBehaviour
         if (!main.chosedSlot) return;
 
         if (main.chosedSlot.GetComponentInChildren<Core>())
+        {
+            main.DetachCore();
             return;
+        } 
+            
 
         Limb limb = main.chosedSlot.GetComponentInChildren<Limb>();
 
@@ -41,7 +45,7 @@ public class LimbSystem : MonoBehaviour
         {
             Limb limb = hit.collider.GetComponentInChildren<Limb>();
 
-            if (limb && main.chosedSlot)
+            if (limb && main.chosedSlot && !main.chosedSlot.GetComponentInChildren<Limb>())
             {
                 Destroy(limb.GetComponent<Rigidbody>());
                 limb.transform.SetParent(main.chosedSlot.transform);

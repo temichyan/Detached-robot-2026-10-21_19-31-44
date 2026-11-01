@@ -108,7 +108,7 @@ public class MainControlSystem : MonoBehaviour
     {
         coreSystem.PullCore();
     }
-    private void DetachCore()
+    public void DetachCore()
     {
         coreSystem.DetachCore();
         UpdateSlots();

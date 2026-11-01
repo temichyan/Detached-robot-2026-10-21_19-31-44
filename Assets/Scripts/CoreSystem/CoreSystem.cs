@@ -29,7 +29,7 @@ public class CoreSystem : MonoBehaviour
     }
     public void PullCore()
     {
-        if (wantChangeObject && main.chosedSlot)
+        if (wantChangeObject && main.chosedSlot && main.chosedSlot.GetComponentInChildren<Limb>())
         {
             main.currentCoreSlot = main.chosedSlot;
             main.chosedSlot = null;
@@ -42,16 +42,20 @@ public class CoreSystem : MonoBehaviour
     }
     public void DetachCore()
     {
-        controlledObject.GetChild(0).gameObject.transform.SetParent(null);
-        main.currentCoreSlot.transform.SetParent(controlledObject.transform);
-        controlledObject.GetComponentInChildren<Limb>().transform.localPosition = Vector3.zero;
-        main.currentCoreSlot.transform.localPosition = Vector3.zero;
-        main.chosedSlot = null;
-        Debug.Log("Detached Core");
-        transform.localPosition += new Vector3(0,0,1f);
+        if (core.GetComponentInParent<ControllableObject>())
+        {
+            controlledObject.GetChild(0).gameObject.transform.SetParent(null);
+            main.currentCoreSlot.transform.SetParent(controlledObject.transform);
+            controlledObject.GetComponentInChildren<Limb>().transform.localPosition = Vector3.zero;
+            main.currentCoreSlot.transform.localPosition = Vector3.zero;
+            main.chosedSlot = null;
+            Debug.Log("Detached Core");
+            transform.localPosition += new Vector3(0, 0, 1f);
+        }
+
 
     }
-    public void CoreConnect()
+  public void CoreConnect()
     {
         RaycastHit hit;
         ControllableObject controllableObject;
@@ -63,16 +67,20 @@ public class CoreSystem : MonoBehaviour
             ))
         {
             SlotAnchor Anchor = hit.collider.GetComponentInChildren<SlotAnchor>();
+            controllableObject = Anchor.GetComponentInParent<ControllableObject>();
 
             if (Anchor && !Anchor.GetComponentInParent<DevicePort>().GetComponentInChildren<Limb>() && !core.GetComponentInParent<ControllableObject>())
             {
-                controllableObject = Anchor.GetComponentInParent<ControllableObject>();
-                controllableObject.transform.SetParent(controlledObject.transform);
+                controlledObject.transform.rotation = controllableObject.transform.rotation;
+                transform.SetPositionAndRotation(
+                    controllableObject.transform.position,
+                    controllableObject.transform.rotation);
+                controllableObject.transform.SetParent(controlledObject);
+                controllableObject.transform.SetLocalPositionAndRotation(
+                    Vector3.zero,
+                    Quaternion.identity);
                 main.currentCoreSlot.transform.SetParent(Anchor.transform);
                 main.currentCoreSlot.transform.localPosition = Vector3.zero;
-                main.currentCoreSlot.transform.localRotation = Quaternion.identity;
-                controllableObject.transform.localPosition = Vector3.zero;
-                controllableObject.transform.localRotation = Quaternion.identity;
             }
         }
     }

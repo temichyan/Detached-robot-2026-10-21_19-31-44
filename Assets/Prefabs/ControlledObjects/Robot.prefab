@@ -314,6 +314,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3359510448743419693}
+  - component: {fileID: 2579869261941016466}
   m_Layer: 0
   m_Name: RightArmSlotAnchor
   m_TagString: Untagged
@@ -338,6 +339,18 @@ Transform:
   - {fileID: 2351309142161398425}
   m_Father: {fileID: 702615443981265665}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2579869261941016466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3253619427930076894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff1200cf114de9a43ace49b25973da12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DevicePort
 --- !u!1 &3527539653995984944
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,6 +405,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3820395143006623170}
+  - component: {fileID: 7724732756415229086}
   m_Layer: 0
   m_Name: LeftArmSlotAnchor
   m_TagString: Untagged
@@ -416,6 +430,18 @@ Transform:
   - {fileID: 5871034939086948318}
   m_Father: {fileID: 702615443981265665}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7724732756415229086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3613020287908072650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff1200cf114de9a43ace49b25973da12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DevicePort
 --- !u!1 &3823815262989137969
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,6 +746,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2062880327922413343}
+  - component: {fileID: 8448001134394642535}
   m_Layer: 0
   m_Name: RightFootSlotAnchor
   m_TagString: Untagged
@@ -744,6 +771,18 @@ Transform:
   - {fileID: 4769928991854857243}
   m_Father: {fileID: 702615443981265665}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8448001134394642535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6383443495786609195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff1200cf114de9a43ace49b25973da12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DevicePort
 --- !u!1 &6439415551047958960
 GameObject:
   m_ObjectHideFlags: 0
@@ -1095,6 +1134,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8364034275406340271}
+  - component: {fileID: 2549178913724206223}
   m_Layer: 0
   m_Name: LeftFootSlotAnchor
   m_TagString: Untagged
@@ -1119,6 +1159,18 @@ Transform:
   - {fileID: 8731802197669332716}
   m_Father: {fileID: 702615443981265665}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2549178913724206223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8048213519014518733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff1200cf114de9a43ace49b25973da12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DevicePort
 --- !u!1 &8174298211175632583
 GameObject:
   m_ObjectHideFlags: 0
