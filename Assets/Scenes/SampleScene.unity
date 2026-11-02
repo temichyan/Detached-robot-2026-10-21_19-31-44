@@ -943,86 +943,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 644731227}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &645804034
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 645804035}
-  - component: {fileID: 645804036}
-  m_Layer: 0
-  m_Name: DoorPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &645804035
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 645804034}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.32782, z: -7}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1630535268}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &645804036
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 645804034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30eaed790f738a04487deb523d348caf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Door
-  requiredPlates:
-  - {fileID: 1229020298}
-  openRotationAngle: {x: 0, y: 90, z: 0}
-  rotationSpeed: 3
---- !u!1 &649257812
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 649257813}
-  m_Layer: 0
-  m_Name: 
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &649257813
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 649257812}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &827507172
 GameObject:
   m_ObjectHideFlags: 0
@@ -1036,6 +956,7 @@ GameObject:
   - component: {fileID: 827507174}
   - component: {fileID: 827507173}
   - component: {fileID: 827507177}
+  - component: {fileID: 827507178}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -1148,6 +1069,82 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe04e9bf176a8464a82aa5242f2155fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Limb
+--- !u!1 &645804034
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 645804035}
+  - component: {fileID: 645804036}
+  m_Layer: 0
+  m_Name: DoorPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &645804035
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645804034}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.32782, z: -7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1630535268}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &645804036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645804034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30eaed790f738a04487deb523d348caf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  requiredPlates:
+  - {fileID: 1229020298}
+  - {fileID: 0}
+  openRotationAngle: {x: 0, y: 90, z: 0}
+  rotationSpeed: 3
+--- !u!1 &649257812 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1223602568234667420, guid: 260d894fa187a1e4abd4c94d45a889c6, type: 3}
+  m_PrefabInstance: {fileID: 7851721346711911945}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827507172}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1403,6 +1400,39 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7795774886890833721, guid: 31b93185981a0df4f99492f876dde386, type: 3}
   m_PrefabInstance: {fileID: 998439947}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1378821461
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1378821466}
+  - component: {fileID: 1378821465}
+  - component: {fileID: 1378821464}
+  - component: {fileID: 1378821463}
+  - component: {fileID: 1378821462}
+  - component: {fileID: 1378821467}
+  m_Layer: 0
+  m_Name: Magnitible Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1378821462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378821461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f03379c099d0634caaceb38962a94f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Limb
 --- !u!1 &1229020293
 GameObject:
   m_ObjectHideFlags: 0
@@ -1528,46 +1558,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3f16fee6fc463b49a22dd601d996332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plate
-  requiredMass: 0.1
+  requiredMass: 10
   onActivated:
     m_PersistentCalls:
       m_Calls: []
   onDeactivated:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &1378821461
+--- !u!1 &1251825469 stripped
 GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 585433999495291110, guid: 93113ecf4e3f45946a3325cdfe27ca37, type: 3}
+  m_PrefabInstance: {fileID: 960691397179540300}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1378821466}
-  - component: {fileID: 1378821465}
-  - component: {fileID: 1378821464}
-  - component: {fileID: 1378821462}
-  - component: {fileID: 1378821467}
-  - component: {fileID: 1378821468}
-  m_Layer: 0
-  m_Name: Magnitible Cube
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1378821462
+--- !u!114 &1251825472
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1378821461}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f03379c099d0634caaceb38962a94f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Limb
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1378821464
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1648,7 +1671,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1378821461}
   serializedVersion: 5
-  m_Mass: 6
+  m_Mass: 50
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1667,27 +1690,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &1378821468
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1378821461}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1416892926
 GameObject:
   m_ObjectHideFlags: 0
@@ -3030,7 +3032,6 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 649257813}
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 1634100898}
@@ -3040,7 +3041,3 @@ SceneRoots:
   - {fileID: 104813853}
   - {fileID: 1229020297}
   - {fileID: 645804035}
-  - {fileID: 827507176}
-  - {fileID: 1378821466}
-  - {fileID: 1768124684}
-  - {fileID: 1551944758650445713}
